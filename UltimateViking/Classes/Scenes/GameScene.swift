@@ -11,13 +11,23 @@ import Foundation
 class GameScene: CCScene {
 	
     // MARK: - Public Objects
-    var physicsWorld:CCPhysicsNode = CCPhysicsNode()
     var canPlay:Bool = true
-    var isTouching:Bool = true
+    var physicsWorld:CCPhysicsNode = CCPhysicsNode()
+    var scoreLabel:CCLabelTTF = CCLabelTTF(string: "Score: 0", fontName: "Verdana-Bold", fontSize: 18.0)
+    var scoreNum:Int = 0
+    var agnar:Viking = Viking()
+    var faixa:Faixa = Faixa(imageNamed: "energiaVerde-ipad.png")
+    var powerUp:Bool = false
+    var isTouching:Bool = false
 	
     // MARK: - Private Objects
-	private let screenSize:CGSize = CCDirector.sharedDirector().viewSize()
+    private let screenSize:CGSize = CCDirector.sharedDirector().viewSize()
     private var canTap:Bool = true
+    private var score:Int = 0
+    private var velPirataPerneta:CGFloat = 5.0
+    private var velPirataPeixe:CGFloat = 9.0
+    
+
 	
 	// MARK: - Life Cycle
 	override init() {
@@ -45,6 +55,19 @@ class GameScene: CCScene {
         background.anchorPoint = CGPointMake(0.5, 0.5)
         self.addChild(background)
         
+        faixa.position = CGPointMake(0.0, 0.0)
+        faixa.anchorPoint = CGPointMake(0.0, 0.0)
+        self.physicsWorld.addChild(faixa, z:1)
+        
+        // Configura o heroi na tela
+        agnar.position = CGPointMake(70, self.screenSize.height/2)
+        agnar.anchorPoint = CGPointMake(0.5, 0.5)
+        self.addChild(agnar, z:2)
+        
+        scoreLabel.position = CGPointMake(self.screenSize.width/2, self.screenSize.height - 10)
+        scoreLabel.anchorPoint = CGPointMake(0.5, 1.0)
+        scoreLabel.color = CCColor.blackColor()
+        self.addChild(scoreLabel, z:5)
         
         // Back button
         let backButton:CCButton = CCButton(title: "[ Back ]", fontName: "Verdana-Bold", fontSize: 28.0)
@@ -56,13 +79,8 @@ class GameScene: CCScene {
         }
         self.addChild(backButton, z:ObjectsLayers.HUD.rawValue)
         
-        // Configura o heroi na tela
-        let player:CCSprite = CCSprite(imageNamed: "player-ipad.png")
-        player.anchorPoint = CGPointMake(0.5, 0.5)
-        player.position = CGPointMake(screenSize.width/96*10, screenSize.height/2)
-        self.addChild(player)
     }
-    
+    /*
     func createEnemy() {
         if (!self.canPlay) {
             return
@@ -83,9 +101,9 @@ class GameScene: CCScene {
         }) as CCActionFiniteTime) as CCAction)
         var delay:CCTime = (CCTime(arc4random_uniform(101)) / 100.0) + 0.5 // De 0.5s a 1.5s
         DelayHelper.sharedInstance.callFunc("createEnemy", onTarget: self, withDelay: delay)
-    }
+    } */
     
-    // MARK: - Public Methods
+    // MARK: - Public Methods verificar se esse método é necessario
     func enemyShotAtPosition(anPosition:CGPoint) {
         let shot:PlayerShot = PlayerShot(imageNamed: "tiro-ipad.png", andDamage:CGFloat((arc4random_uniform(5) + 3)))
         shot.anchorPoint = CGPointMake(0.5, 0.5)
@@ -103,7 +121,7 @@ class GameScene: CCScene {
 		super.onEnter()
         
         // Inicia a geracao de inimigos apos 3s de inicio de jogo
-        DelayHelper.sharedInstance.callFunc("createEnemy", onTarget: self, withDelay: 3.0)
+        DelayHelper.sharedInstance.callFunc("generatePirata", onTarget: self, withDelay: 3.0)
 	}
 
 	// Tick baseado no FPS
@@ -114,12 +132,162 @@ class GameScene: CCScene {
 	// MARK: - Private Methods
 
 	// MARK: - Public Methods
+    func generatePirata() {
+        if (self.canPlay) {
+            // Quantidade de piratas gerado por vez...
+            let auxPosition:CGFloat = CGFloat(arc4random_uniform(10)+1)
+            var positionY:CGFloat = screenSize.height - 150
+            let positionX:CGFloat = self.screenSize.width
+            switch auxPosition {
+            case 1:
+                positionY = positionY * auxPosition / 10 + 50
+                break;
+            case 10:
+                positionY = positionY * auxPosition / 10 - 100
+                break;
+            default:
+                positionY = positionY * auxPosition / 10
+                break;
+            }
+            let auxRan:CGFloat = CGFloat(arc4random_uniform(10)+1)
+            if (auxRan > 7) {
+                var pirataPeixe:PirataPeixe = PirataPeixe(event: "updateScore", target: self)
+                pirataPeixe.position = CGPointMake(positionX, positionY)
+                pirataPeixe.name = "z"
+                self.physicsWorld.addChild(pirataPeixe, z:1)
+                pirataPeixe.moveMe(self.velPirataPeixe)
+                println("posicao: " + auxPosition.description + " random: Peixe " + auxRan.description)
+            } else {
+                var pirataPerneta:PirataPerneta = PirataPerneta(event: "updateScore", target: self)
+                pirataPerneta.position = CGPointMake(positionX, positionY)
+                pirataPerneta.name = "z"
+                self.physicsWorld.addChild(pirataPerneta, z:1)
+                pirataPerneta.moveMe(self.velPirataPerneta)
+                println("posicao: " + auxPosition.description + " random: Perneta " + auxRan.description)
+            }
+            
+            // Apos geracao, registra nova geracao apos um tempo
+            DelayHelper.sharedInstance.callFunc("generatePirata", onTarget: self, withDelay: 1.0)
+        }
+    }
+    
+    func doGameOver() {
+        self.canPlay = false
+        self.isTouching = false
+        //self.createParticleAtPosition(self.heroShip.position)
+        //self.heroShip.removeFromParentAndCleanup(true)
+        
+        // Registra o novo best score caso haja
+        /*
+        var scores: [Int] = NSUserDefaults.standardUserDefaults().objectForKey("scores") as [Int]
+        scores.insert(self.score, atIndex: scores.count)
+        scores.sort({ $0 > $1 })
+        scores.removeLast()
+        NSUserDefaults.standardUserDefaults().setObject(scores  , forKey: "scores")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        println(scores)
+        */
+        
+        // Exibe o texto game over
+        let label:CCSprite = CCSprite(imageNamed: "textGameOver.png")
+        label.position = CGPointMake(screenSize.width/2, screenSize.height/2)
+        label.anchorPoint = CGPointMake(0.5, 0.5)
+        self.addChild(label, z:5)
+    }
+    
+    func createParticleAtPosition(aPosition:CGPoint) {
+        // Config File
+        var particleFile:CCParticleSystem = CCParticleSystem(file: "ShipBlow.plist")
+        particleFile.position = aPosition
+        particleFile.autoRemoveOnFinish = true
+        self.addChild(particleFile, z:4)
+    }
+    
+    // MARK: - CCPhysicsCollisionDelegate
+    // ======= Validacao para colisoes entre a Machado e os piratas pernetas
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, PirataPerneta aPirataPerneta:PirataPerneta!, Machado aMachado:Machado!) -> Bool {
+        aPirataPerneta.life -= 1
+        if (aPirataPerneta.life <= 0) {
+            aPirataPerneta.life = 0
+            score += 3
+            self.doGameOver()
+        }
+        
+        // Explode e remove a nave
+        SoundPlayHelper.sharedInstance.playSoundWithControl(GameMusicAndSoundFx.SoundFXPuf)
+        self.createParticleAtPosition(aPirataPerneta.position)
+        aPirataPerneta.removeFromParentAndCleanup(true)
+        return true
+    }
+    // ======= Validacao para colisoes entre a Machado e os piratas peixes
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, PirataPeixe aPirataPeixe:PirataPeixe, Machado aMachado:Machado!) -> Bool {
+        aPirataPeixe.life -= 1
+        if (aPirataPeixe.life <= 0) {
+            aPirataPeixe.life = 0
+            score += 7
+            self.doGameOver()
+        }
+        
+        // Explode e remove a nave
+        SoundPlayHelper.sharedInstance.playSoundWithControl(GameMusicAndSoundFx.SoundFXPuf)
+        self.createParticleAtPosition(aPirataPeixe.position)
+        aPirataPeixe.removeFromParentAndCleanup(true)
+        
+        return true
+    }
+    // ======= Validacao para colisoes entre a Faixa e os Piratas Perneta
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, Faixa aFaixa:Faixa!, PirataPerneta aPirataPerneta:PirataPerneta!) -> Bool {
+        aFaixa.life -= 1
+        if (aFaixa.life <= 0) {
+            aFaixa.life = 0
+            self.doGameOver()
+        }
+        // Remove o Pirata
+        self.createParticleAtPosition(aPirataPerneta.position)
+        aPirataPerneta.removeFromParentAndCleanup(true)
+        // Verifica a vida da faixa
+        aFaixa.verificaLife()
+        return true
+    }
+    // ======= Validacao para colisoes entre a Faixa e os Piratas Peixe
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, Faixa aFaixa:Faixa!, PirataPeixe aPirataPeixe:PirataPeixe!) -> Bool {
+        aFaixa.life -= 1
+        if (aFaixa.life <= 0) {
+            aFaixa.life = 0
+            self.doGameOver()
+        }
+        // Remove o Pirata
+        self.createParticleAtPosition(aPirataPeixe.position)
+        aPirataPeixe.removeFromParentAndCleanup(true)
+        // Verifica a vida da faixa
+        aFaixa.verificaLife()
+        return true
+    }
+
 	
 	// MARK: - Delegates/Datasources
+    override func touchBegan(touch: UITouch!, withEvent event: UIEvent!) {
+        if (self.canPlay) {
+            self.isTouching = true
+            let locationInView:CGPoint = CCDirector.sharedDirector().convertTouchToGL(touch)
+            var dano:CGFloat = 1.0
+            if (self.powerUp) { dano = 3.0 }
+            let machado:Machado = Machado(imageNamed:"tiro-ipad.png", andDamage: dano)
+            machado.anchorPoint = CGPointMake(0.5, 0.5)
+            machado.position = CGPointMake(self.agnar.position.x + 50, self.agnar.position.y + 10)
+            machado.runAction(CCActionSequence.actionOne(
+                CCActionMoveBy.actionWithDuration(0.8, position: locationInView) as CCActionFiniteTime, two: CCActionCallBlock.actionWithBlock({ () -> Void in
+                    machado.removeFromParentAndCleanup(true)
+                }) as CCActionFiniteTime) as CCAction)
+            self.physicsWorld.addChild(machado, z:1)
+        }
+    }
+    
 	
 	// MARK: - Death Cycle
 	override func onExit() {
 		// Chamado quando sai do director
 		super.onExit()
+        CCTextureCache.sharedTextureCache().removeAllTextures()
 	}
 }

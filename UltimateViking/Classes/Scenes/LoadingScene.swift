@@ -24,6 +24,14 @@ class LoadingScene : CCScene {
 		label.position = CGPointMake(self.screenSize.width/2, self.screenSize.height/2)
 		label.anchorPoint = CGPointMake(0.5, 0.5)
 		self.addChild(label)
+        
+        // Preload das musicas
+        SoundPlayHelper.sharedInstance.preloadSoundsAndMusic()
+        SoundPlayHelper.sharedInstance.setMusicDefaultVolume()
+        
+        // Preload dos plist
+        CCSpriteFrameCache.sharedSpriteFrameCache().addSpriteFramesWithFile("PirataPerneta-ipad.plist")
+        CCSpriteFrameCache.sharedSpriteFrameCache().addSpriteFramesWithFile("PirataPeixe-ipad.plist")
 
 		DelayHelper.sharedInstance.callBlock({ _ in
 			StateMachine.sharedInstance.changeScene(StateMachineScenes.HomeScene, isFade:true)

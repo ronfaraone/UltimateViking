@@ -17,7 +17,7 @@
 	</dict>
 	<key>frames</key>
 	<dict>
-		<key>Pirata 20001.png</key>
+		<key>PirataPeixe1.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{80.0,102.0}</string>
@@ -36,7 +36,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20002.png</key>
+		<key>PirataPeixe2.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{69.0,106.0}</string>
@@ -55,7 +55,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20003.png</key>
+		<key>PirataPeixe3.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,110.0}</string>
@@ -74,7 +74,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20004.png</key>
+		<key>PirataPeixe4.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,111.0}</string>
@@ -93,7 +93,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20005.png</key>
+		<key>PirataPeixe5.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,111.0}</string>
@@ -112,7 +112,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20006.png</key>
+		<key>PirataPeixe6.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,111.0}</string>
@@ -131,7 +131,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20007.png</key>
+		<key>PirataPeixe7.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,110.0}</string>
@@ -150,7 +150,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20008.png</key>
+		<key>PirataPeixe8.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{70.0,107.0}</string>
@@ -169,7 +169,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20009.png</key>
+		<key>PirataPeixe9.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{75.0,106.0}</string>
@@ -188,7 +188,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20010.png</key>
+		<key>PirataPeixe10.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{84.0,104.0}</string>
@@ -207,7 +207,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20011.png</key>
+		<key>PirataPeixe11.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{78.0,107.0}</string>
@@ -226,7 +226,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20012.png</key>
+		<key>PirataPeixe12.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{77.0,109.0}</string>
@@ -245,7 +245,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20013.png</key>
+		<key>PirataPeixe13.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{75.0,111.0}</string>
@@ -264,7 +264,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20014.png</key>
+		<key>PirataPeixe14.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{69.0,110.0}</string>
@@ -283,7 +283,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20015.png</key>
+		<key>PirataPeixe15.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,108.0}</string>
@@ -302,7 +302,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20016.png</key>
+		<key>PirataPeixe16.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,108.0}</string>
@@ -321,7 +321,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20017.png</key>
+		<key>PirataPeixe17.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{68.0,107.0}</string>
@@ -340,7 +340,7 @@
 			<key>aliases</key>
 			<array/>
 		</dict>
-		<key>Pirata 20018.png</key>
+		<key>PirataPeixe18.png</key>
 		<dict>
 			<key>spriteSize</key>
 			<string>{69.0,106.0}</string>

@@ -204,9 +204,7 @@
 		B977C3D61AC9F258006E903D /* energiaVerde-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3CA1AC9F258006E903D /* energiaVerde-ipadhd.png */; };
 		B977C3D71AC9F258006E903D /* energiaVermelha-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3CB1AC9F258006E903D /* energiaVermelha-ipadhd.png */; };
 		B977C3D81AC9F258006E903D /* fire-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3CC1AC9F258006E903D /* fire-ipadhd.png */; };
-		B977C3D91AC9F258006E903D /* PirataPeixe-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B977C3CD1AC9F258006E903D /* PirataPeixe-ipadhd.plist */; };
 		B977C3DA1AC9F258006E903D /* PirataPeixe-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3CE1AC9F258006E903D /* PirataPeixe-ipadhd.png */; };
-		B977C3DB1AC9F258006E903D /* PirataPerneta-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = B977C3CF1AC9F258006E903D /* PirataPerneta-ipadhd.plist */; };
 		B977C3DC1AC9F258006E903D /* PirataPerneta-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3D01AC9F258006E903D /* PirataPerneta-ipadhd.png */; };
 		B977C3DD1AC9F258006E903D /* player-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3D11AC9F258006E903D /* player-ipadhd.png */; };
 		B977C3DE1AC9F258006E903D /* powerUP-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3D21AC9F258006E903D /* powerUP-ipadhd.png */; };
@@ -218,18 +216,28 @@
 		B977C3F11AC9F287006E903D /* fire-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3E51AC9F287006E903D /* fire-ipad.png */; };
 		B977C3F31AC9F287006E903D /* PirataPeixe-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3E71AC9F287006E903D /* PirataPeixe-ipad.png */; };
 		B977C3F51AC9F287006E903D /* PirataPerneta-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3E91AC9F287006E903D /* PirataPerneta-ipad.png */; };
-		B977C3F61AC9F287006E903D /* player-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3EA1AC9F287006E903D /* player-ipad.png */; };
 		B977C3F71AC9F287006E903D /* powerUP-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3EB1AC9F287006E903D /* powerUP-ipad.png */; };
 		B977C3F81AC9F287006E903D /* tiro-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3EC1AC9F287006E903D /* tiro-ipad.png */; };
 		B977C3FA1ACAE9D4006E903D /* bgCenario-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3F91ACAE9D4006E903D /* bgCenario-iphone.png */; };
 		B977C3FC1ACAF076006E903D /* PlayerShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B977C3FB1ACAF076006E903D /* PlayerShot.swift */; };
-		B977C3FF1ACAF870006E903D /* PirataPeixe-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = B977C3FD1ACAF870006E903D /* PirataPeixe-ipad.plist */; };
-		B977C4001ACAF870006E903D /* PirataPerneta-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = B977C3FE1ACAF870006E903D /* PirataPerneta-ipad.plist */; };
 		B99038221AC9B3A900F74BD4 /* MusicInGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B990381F1AC9B3A900F74BD4 /* MusicInGame.mp3 */; };
 		B99038231AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B99038201AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 */; };
 		B99038241AC9B3A900F74BD4 /* SoundFXPuf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B99038211AC9B3A900F74BD4 /* SoundFXPuf.mp3 */; };
 		B99038271AC9C9E300F74BD4 /* Piratas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99038261AC9C9E300F74BD4 /* Piratas.swift */; };
 		B99038291AC9D77B00F74BD4 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99038281AC9D77B00F74BD4 /* Constantes.swift */; };
+		FBE33B5D1AD474DF002B86AD /* PirataPeixe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE33B5C1AD474DF002B86AD /* PirataPeixe.swift */; };
+		FBE33B5F1AD474EE002B86AD /* PirataPerneta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE33B5E1AD474EE002B86AD /* PirataPerneta.swift */; };
+		FBE33B611AD474F3002B86AD /* Viking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE33B601AD474F3002B86AD /* Viking.swift */; };
+		FBE33B631AD474F8002B86AD /* Machado.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE33B621AD474F8002B86AD /* Machado.swift */; };
+		FBE33B651AD474FF002B86AD /* Faixa.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE33B641AD474FF002B86AD /* Faixa.swift */; };
+		FBE33B671AD47CC4002B86AD /* PirataPeixe-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B661AD47CC4002B86AD /* PirataPeixe-ipadhd.plist */; };
+		FBE33B691AD47CCE002B86AD /* PirataPerneta-ipadhd.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B681AD47CCE002B86AD /* PirataPerneta-ipadhd.plist */; };
+		FBE33B6B1AD47CFF002B86AD /* PirataPeixe-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B6A1AD47CFF002B86AD /* PirataPeixe-ipad.plist */; };
+		FBE33B6D1AD47D06002B86AD /* PirataPerneta-ipad.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B6C1AD47D06002B86AD /* PirataPerneta-ipad.plist */; };
+		FBE33B6F1AD47D7A002B86AD /* player-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B6E1AD47D7A002B86AD /* player-ipad.png */; };
+		FBE33B711AD47F86002B86AD /* textGameOver.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B701AD47F86002B86AD /* textGameOver.png */; };
+		FBE33B731AD48175002B86AD /* ShipBlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B721AD48175002B86AD /* ShipBlow.plist */; };
+		FBE33B751AD4817C002B86AD /* ShipBlow.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE33B741AD4817C002B86AD /* ShipBlow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -637,9 +645,7 @@
 		B977C3CA1AC9F258006E903D /* energiaVerde-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "energiaVerde-ipadhd.png"; sourceTree = "<group>"; };
 		B977C3CB1AC9F258006E903D /* energiaVermelha-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "energiaVermelha-ipadhd.png"; sourceTree = "<group>"; };
 		B977C3CC1AC9F258006E903D /* fire-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire-ipadhd.png"; sourceTree = "<group>"; };
-		B977C3CD1AC9F258006E903D /* PirataPeixe-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPeixe-ipadhd.plist"; sourceTree = "<group>"; };
 		B977C3CE1AC9F258006E903D /* PirataPeixe-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirataPeixe-ipadhd.png"; sourceTree = "<group>"; };
-		B977C3CF1AC9F258006E903D /* PirataPerneta-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPerneta-ipadhd.plist"; sourceTree = "<group>"; };
 		B977C3D01AC9F258006E903D /* PirataPerneta-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirataPerneta-ipadhd.png"; sourceTree = "<group>"; };
 		B977C3D11AC9F258006E903D /* player-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-ipadhd.png"; sourceTree = "<group>"; };
 		B977C3D21AC9F258006E903D /* powerUP-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerUP-ipadhd.png"; sourceTree = "<group>"; };
@@ -651,18 +657,28 @@
 		B977C3E51AC9F287006E903D /* fire-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire-ipad.png"; sourceTree = "<group>"; };
 		B977C3E71AC9F287006E903D /* PirataPeixe-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirataPeixe-ipad.png"; sourceTree = "<group>"; };
 		B977C3E91AC9F287006E903D /* PirataPerneta-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirataPerneta-ipad.png"; sourceTree = "<group>"; };
-		B977C3EA1AC9F287006E903D /* player-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-ipad.png"; sourceTree = "<group>"; };
 		B977C3EB1AC9F287006E903D /* powerUP-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerUP-ipad.png"; sourceTree = "<group>"; };
 		B977C3EC1AC9F287006E903D /* tiro-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiro-ipad.png"; sourceTree = "<group>"; };
 		B977C3F91ACAE9D4006E903D /* bgCenario-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCenario-iphone.png"; sourceTree = "<group>"; };
 		B977C3FB1ACAF076006E903D /* PlayerShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShot.swift; sourceTree = "<group>"; };
-		B977C3FD1ACAF870006E903D /* PirataPeixe-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPeixe-ipad.plist"; sourceTree = "<group>"; };
-		B977C3FE1ACAF870006E903D /* PirataPerneta-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPerneta-ipad.plist"; sourceTree = "<group>"; };
 		B990381F1AC9B3A900F74BD4 /* MusicInGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MusicInGame.mp3; sourceTree = "<group>"; };
 		B99038201AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundFXButtonTap.mp3; sourceTree = "<group>"; };
 		B99038211AC9B3A900F74BD4 /* SoundFXPuf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundFXPuf.mp3; sourceTree = "<group>"; };
 		B99038261AC9C9E300F74BD4 /* Piratas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Piratas.swift; sourceTree = "<group>"; };
 		B99038281AC9D77B00F74BD4 /* Constantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		FBE33B5C1AD474DF002B86AD /* PirataPeixe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirataPeixe.swift; sourceTree = "<group>"; };
+		FBE33B5E1AD474EE002B86AD /* PirataPerneta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirataPerneta.swift; sourceTree = "<group>"; };
+		FBE33B601AD474F3002B86AD /* Viking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viking.swift; sourceTree = "<group>"; };
+		FBE33B621AD474F8002B86AD /* Machado.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Machado.swift; sourceTree = "<group>"; };
+		FBE33B641AD474FF002B86AD /* Faixa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faixa.swift; sourceTree = "<group>"; };
+		FBE33B661AD47CC4002B86AD /* PirataPeixe-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPeixe-ipadhd.plist"; sourceTree = "<group>"; };
+		FBE33B681AD47CCE002B86AD /* PirataPerneta-ipadhd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPerneta-ipadhd.plist"; sourceTree = "<group>"; };
+		FBE33B6A1AD47CFF002B86AD /* PirataPeixe-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPeixe-ipad.plist"; sourceTree = "<group>"; };
+		FBE33B6C1AD47D06002B86AD /* PirataPerneta-ipad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PirataPerneta-ipad.plist"; sourceTree = "<group>"; };
+		FBE33B6E1AD47D7A002B86AD /* player-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-ipad.png"; sourceTree = "<group>"; };
+		FBE33B701AD47F86002B86AD /* textGameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textGameOver.png; sourceTree = "<group>"; };
+		FBE33B721AD48175002B86AD /* ShipBlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShipBlow.plist; sourceTree = "<group>"; };
+		FBE33B741AD4817C002B86AD /* ShipBlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShipBlow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -693,6 +709,8 @@
 		1226620E19F00CD6001FE3B9 /* DefaultParticleFire */ = {
 			isa = PBXGroup;
 			children = (
+				FBE33B721AD48175002B86AD /* ShipBlow.plist */,
+				FBE33B741AD4817C002B86AD /* ShipBlow.png */,
 				1226620F19F00CD6001FE3B9 /* fire.png */,
 			);
 			name = DefaultParticleFire;
@@ -1544,12 +1562,12 @@
 			children = (
 				B977C3C81AC9F258006E903D /* bgCenario-ipadhd.png */,
 				B977C3C91AC9F258006E903D /* energiaAmarela-ipadhd.png */,
+				FBE33B661AD47CC4002B86AD /* PirataPeixe-ipadhd.plist */,
+				FBE33B681AD47CCE002B86AD /* PirataPerneta-ipadhd.plist */,
 				B977C3CA1AC9F258006E903D /* energiaVerde-ipadhd.png */,
 				B977C3CB1AC9F258006E903D /* energiaVermelha-ipadhd.png */,
 				B977C3CC1AC9F258006E903D /* fire-ipadhd.png */,
-				B977C3CD1AC9F258006E903D /* PirataPeixe-ipadhd.plist */,
 				B977C3CE1AC9F258006E903D /* PirataPeixe-ipadhd.png */,
-				B977C3CF1AC9F258006E903D /* PirataPerneta-ipadhd.plist */,
 				B977C3D01AC9F258006E903D /* PirataPerneta-ipadhd.png */,
 				B977C3D11AC9F258006E903D /* player-ipadhd.png */,
 				B977C3D21AC9F258006E903D /* powerUP-ipadhd.png */,
@@ -1561,17 +1579,18 @@
 		B977C3E01AC9F262006E903D /* Normal */ = {
 			isa = PBXGroup;
 			children = (
-				B977C3FD1ACAF870006E903D /* PirataPeixe-ipad.plist */,
-				B977C3FE1ACAF870006E903D /* PirataPerneta-ipad.plist */,
 				B977C3F91ACAE9D4006E903D /* bgCenario-iphone.png */,
 				B977C3E11AC9F287006E903D /* bgCenario-ipad.png */,
 				B977C3E21AC9F287006E903D /* energiaAmarela-ipad.png */,
+				FBE33B6A1AD47CFF002B86AD /* PirataPeixe-ipad.plist */,
+				FBE33B701AD47F86002B86AD /* textGameOver.png */,
+				FBE33B6E1AD47D7A002B86AD /* player-ipad.png */,
 				B977C3E31AC9F287006E903D /* energiaVerde-ipad.png */,
+				FBE33B6C1AD47D06002B86AD /* PirataPerneta-ipad.plist */,
 				B977C3E41AC9F287006E903D /* energiaVermelha-ipad.png */,
 				B977C3E51AC9F287006E903D /* fire-ipad.png */,
 				B977C3E71AC9F287006E903D /* PirataPeixe-ipad.png */,
 				B977C3E91AC9F287006E903D /* PirataPerneta-ipad.png */,
-				B977C3EA1AC9F287006E903D /* player-ipad.png */,
 				B977C3EB1AC9F287006E903D /* powerUP-ipad.png */,
 				B977C3EC1AC9F287006E903D /* tiro-ipad.png */,
 			);
@@ -1582,6 +1601,11 @@
 			isa = PBXGroup;
 			children = (
 				B99038261AC9C9E300F74BD4 /* Piratas.swift */,
+				FBE33B601AD474F3002B86AD /* Viking.swift */,
+				FBE33B621AD474F8002B86AD /* Machado.swift */,
+				FBE33B5E1AD474EE002B86AD /* PirataPerneta.swift */,
+				FBE33B5C1AD474DF002B86AD /* PirataPeixe.swift */,
+				FBE33B641AD474FF002B86AD /* Faixa.swift */,
 				B977C3FB1ACAF076006E903D /* PlayerShot.swift */,
 			);
 			name = Objects;
@@ -1663,15 +1687,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE33B6F1AD47D7A002B86AD /* player-ipad.png in Resources */,
 				B977C3F71AC9F287006E903D /* powerUP-ipad.png in Resources */,
 				B977C3FA1ACAE9D4006E903D /* bgCenario-iphone.png in Resources */,
-				B977C3DB1AC9F258006E903D /* PirataPerneta-ipadhd.plist in Resources */,
 				B977C3D71AC9F258006E903D /* energiaVermelha-ipadhd.png in Resources */,
+				FBE33B731AD48175002B86AD /* ShipBlow.plist in Resources */,
 				B977C3DC1AC9F258006E903D /* PirataPerneta-ipadhd.png in Resources */,
 				B977C3D41AC9F258006E903D /* bgCenario-ipadhd.png in Resources */,
-				B977C3FF1ACAF870006E903D /* PirataPeixe-ipad.plist in Resources */,
 				B977C3EF1AC9F287006E903D /* energiaVerde-ipad.png in Resources */,
-				B977C3F61AC9F287006E903D /* player-ipad.png in Resources */,
+				FBE33B6B1AD47CFF002B86AD /* PirataPeixe-ipad.plist in Resources */,
+				FBE33B671AD47CC4002B86AD /* PirataPeixe-ipadhd.plist in Resources */,
 				1226621019F00CD6001FE3B9 /* fire.png in Resources */,
 				1255545119C0D90600EC663C /* Default.png in Resources */,
 				B99038231AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 in Resources */,
@@ -1680,8 +1705,9 @@
 				B977C3DD1AC9F258006E903D /* player-ipadhd.png in Resources */,
 				B977C3ED1AC9F287006E903D /* bgCenario-ipad.png in Resources */,
 				B977C3DE1AC9F258006E903D /* powerUP-ipadhd.png in Resources */,
+				FBE33B691AD47CCE002B86AD /* PirataPerneta-ipadhd.plist in Resources */,
 				B977C3F31AC9F287006E903D /* PirataPeixe-ipad.png in Resources */,
-				B977C3D91AC9F258006E903D /* PirataPeixe-ipadhd.plist in Resources */,
+				FBE33B711AD47F86002B86AD /* textGameOver.png in Resources */,
 				B977C3D81AC9F258006E903D /* fire-ipadhd.png in Resources */,
 				B977C3F01AC9F287006E903D /* energiaVermelha-ipad.png in Resources */,
 				B977C3EE1AC9F287006E903D /* energiaAmarela-ipad.png in Resources */,
@@ -1692,11 +1718,12 @@
 				B977C3DA1AC9F258006E903D /* PirataPeixe-ipadhd.png in Resources */,
 				B977C3DF1AC9F258006E903D /* tiro-ipadhd.png in Resources */,
 				B99038241AC9B3A900F74BD4 /* SoundFXPuf.mp3 in Resources */,
+				FBE33B751AD4817C002B86AD /* ShipBlow.png in Resources */,
 				B977C3F11AC9F287006E903D /* fire-ipad.png in Resources */,
 				B977C3D51AC9F258006E903D /* energiaAmarela-ipadhd.png in Resources */,
 				B977C3F51AC9F287006E903D /* PirataPerneta-ipad.png in Resources */,
 				B99038221AC9B3A900F74BD4 /* MusicInGame.mp3 in Resources */,
-				B977C4001ACAF870006E903D /* PirataPerneta-ipad.plist in Resources */,
+				FBE33B6D1AD47D06002B86AD /* PirataPerneta-ipad.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1710,7 +1737,9 @@
 				1293CE7819C08A26006A0E25 /* CCScrollView.m in Sources */,
 				1293CE1319C08A26006A0E25 /* OALAction.m in Sources */,
 				1293CDAF19C08A26006A0E25 /* CCTexturePVR.m in Sources */,
+				FBE33B611AD474F3002B86AD /* Viking.swift in Sources */,
 				1293CE9019C08A26006A0E25 /* CCBReader.m in Sources */,
+				FBE33B5D1AD474DF002B86AD /* PirataPeixe.swift in Sources */,
 				1293CE2F19C08A26006A0E25 /* ALBuffer.m in Sources */,
 				1293CE3519C08A26006A0E25 /* ALChannelSource.m in Sources */,
 				1293CE5819C08A26006A0E25 /* IOSVersion.m in Sources */,
@@ -1726,6 +1755,7 @@
 				1293CE6419C08A26006A0E25 /* OALAudioFile.m in Sources */,
 				1293CD3B19C08A25006A0E25 /* CCDrawNode.m in Sources */,
 				1293CE2619C08A26006A0E25 /* OALAudioTracks.m in Sources */,
+				FBE33B631AD474F8002B86AD /* Machado.swift in Sources */,
 				1293CE8A19C08A26006A0E25 /* CCBAnimationManager.m in Sources */,
 				B977C3FC1ACAF076006E903D /* PlayerShot.swift in Sources */,
 				1293CDF819C08A26006A0E25 /* CCVertex.m in Sources */,
@@ -1742,6 +1772,7 @@
 				1293CDFB19C08A26006A0E25 /* CGPointExtension.m in Sources */,
 				1255543619C09CD200EC663C /* HomeScene.swift in Sources */,
 				12A8720419C3396F00B0C2E1 /* KeyChainHelper.swift in Sources */,
+				FBE33B651AD474FF002B86AD /* Faixa.swift in Sources */,
 				12F88ABE19DDA1620001531E /* CCNoARC.m in Sources */,
 				1255543019C09C9E00EC663C /* StateMachine.swift in Sources */,
 				1293CD2519C08A25006A0E25 /* CCActionTween.m in Sources */,
@@ -1848,6 +1879,7 @@
 				12F88AE119DDA1D20001531E /* CCEffectBrightness.m in Sources */,
 				1293CDCA19C08A26006A0E25 /* CCDirectorIOS.m in Sources */,
 				1293CD6419C08A25006A0E25 /* CCParticleBatchNode.m in Sources */,
+				FBE33B5F1AD474EE002B86AD /* PirataPerneta.swift in Sources */,
 				1293CDFE19C08A26006A0E25 /* NSAttributedString+CCAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
