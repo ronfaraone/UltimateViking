@@ -18,9 +18,14 @@ class LoadingScene : CCScene {
 	override init() {
 		super.init()
 
+        let background:CCSprite = CCSprite(imageNamed: "uv-background.png")
+        background.position = CGPointMake(screenSize.width/2, screenSize.height/2)
+        background.anchorPoint = CGPointMake(0.5, 0.5)
+        self.addChild(background)
+        
 		// Label loading
 		let label:CCLabelTTF = CCLabelTTF(string: "Loading...", fontName: "Chalkduster", fontSize: 36.0)
-		label.color = CCColor.redColor()
+		label.color = CCColor.whiteColor()
 		label.position = CGPointMake(self.screenSize.width/2, self.screenSize.height/2)
 		label.anchorPoint = CGPointMake(0.5, 0.5)
 		self.addChild(label)

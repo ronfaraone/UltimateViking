@@ -11,7 +11,7 @@ import Foundation
 
 	// MARK: Life Cycle
 	override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-		setupCocos2dWithOptions([CCSetupShowDebugStats: true])
+		setupCocos2dWithOptions([CCSetupShowDebugStats: false])
 
 		return true
 	}

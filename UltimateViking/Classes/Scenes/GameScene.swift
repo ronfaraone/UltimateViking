@@ -70,7 +70,7 @@ class GameScene: CCScene {
         self.addChild(scoreLabel, z:5)
         
         // Back button
-        let backButton:CCButton = CCButton(title: "[ Back ]", fontName: "Verdana-Bold", fontSize: 28.0)
+        let backButton:CCButton = CCButton(title: "", spriteFrame: CCSpriteFrame.frameWithImageNamed("back.png") as CCSpriteFrame)
         backButton.position = CGPointMake(screenSize.width, screenSize.height)
         backButton.anchorPoint = CGPointMake(1.0, 1.0)
         backButton.zoomWhenHighlighted = false
@@ -105,7 +105,7 @@ class GameScene: CCScene {
     
     // MARK: - Public Methods verificar se esse método é necessario
     func enemyShotAtPosition(anPosition:CGPoint) {
-        let shot:PlayerShot = PlayerShot(imageNamed: "tiro-ipad.png", andDamage:CGFloat((arc4random_uniform(5) + 3)))
+        let shot:Machado = Machado(imageNamed: "tiro-ipad.png", andDamage:CGFloat((arc4random_uniform(5) + 3)))
         shot.anchorPoint = CGPointMake(0.5, 0.5)
         shot.position = anPosition
         

@@ -15,11 +15,6 @@
 		1255543719C09CD200EC663C /* LoadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255543419C09CD200EC663C /* LoadingScene.swift */; };
 		1255543919C0A00E00EC663C /* SoundPlayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255543819C0A00E00EC663C /* SoundPlayHelper.swift */; };
 		1255543B19C0C3B100EC663C /* DelayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255543A19C0C3B100EC663C /* DelayHelper.swift */; };
-		1255544919C0D85B00EC663C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255544819C0D85B00EC663C /* Images.xcassets */; };
-		1255544F19C0D90600EC663C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1255544B19C0D90600EC663C /* Default-568h@2x.png */; };
-		1255545019C0D90600EC663C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1255544C19C0D90600EC663C /* Default-Landscape~ipad.png */; };
-		1255545119C0D90600EC663C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1255544D19C0D90600EC663C /* Default.png */; };
-		1255545219C0D90600EC663C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1255544E19C0D90600EC663C /* Default@2x.png */; };
 		1293CCFA19C08A25006A0E25 /* CCEffectNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1293CCF919C08A25006A0E25 /* CCEffectNode.m */; };
 		1293CD0319C08A25006A0E25 /* CCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1293CD0219C08A25006A0E25 /* CCRenderer.m */; };
 		1293CD0719C08A25006A0E25 /* CCShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1293CD0619C08A25006A0E25 /* CCShader.m */; };
@@ -219,7 +214,11 @@
 		B977C3F71AC9F287006E903D /* powerUP-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3EB1AC9F287006E903D /* powerUP-ipad.png */; };
 		B977C3F81AC9F287006E903D /* tiro-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3EC1AC9F287006E903D /* tiro-ipad.png */; };
 		B977C3FA1ACAE9D4006E903D /* bgCenario-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B977C3F91ACAE9D4006E903D /* bgCenario-iphone.png */; };
-		B977C3FC1ACAF076006E903D /* PlayerShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B977C3FB1ACAF076006E903D /* PlayerShot.swift */; };
+		B98572401AD49D3500DAD993 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B985723F1AD49D3500DAD993 /* Images.xcassets */; };
+		B98A9D321AD48AE0006B43C4 /* uv-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B98A9D311AD48AE0006B43C4 /* uv-background.png */; };
+		B98A9D341AD48AE8006B43C4 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = B98A9D331AD48AE8006B43C4 /* start.png */; };
+		B98A9D361AD48AED006B43C4 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B98A9D351AD48AED006B43C4 /* back.png */; };
+		B98A9D381AD48AF7006B43C4 /* uv-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B98A9D371AD48AF7006B43C4 /* uv-logo.png */; };
 		B99038221AC9B3A900F74BD4 /* MusicInGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B990381F1AC9B3A900F74BD4 /* MusicInGame.mp3 */; };
 		B99038231AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B99038201AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 */; };
 		B99038241AC9B3A900F74BD4 /* SoundFXPuf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B99038211AC9B3A900F74BD4 /* SoundFXPuf.mp3 */; };
@@ -249,11 +248,6 @@
 		1255543419C09CD200EC663C /* LoadingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingScene.swift; sourceTree = "<group>"; };
 		1255543819C0A00E00EC663C /* SoundPlayHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayHelper.swift; sourceTree = "<group>"; };
 		1255543A19C0C3B100EC663C /* DelayHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayHelper.swift; sourceTree = "<group>"; };
-		1255544819C0D85B00EC663C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
-		1255544B19C0D90600EC663C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1255544C19C0D90600EC663C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		1255544D19C0D90600EC663C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		1255544E19C0D90600EC663C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1293CCAC19C08A25006A0E25 /* UltimateViking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateViking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1293CCB019C08A25006A0E25 /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveChipmunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1293CCD619C08A25006A0E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
@@ -660,7 +654,11 @@
 		B977C3EB1AC9F287006E903D /* powerUP-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerUP-ipad.png"; sourceTree = "<group>"; };
 		B977C3EC1AC9F287006E903D /* tiro-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiro-ipad.png"; sourceTree = "<group>"; };
 		B977C3F91ACAE9D4006E903D /* bgCenario-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCenario-iphone.png"; sourceTree = "<group>"; };
-		B977C3FB1ACAF076006E903D /* PlayerShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShot.swift; sourceTree = "<group>"; };
+		B985723F1AD49D3500DAD993 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B98A9D311AD48AE0006B43C4 /* uv-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv-background.png"; sourceTree = "<group>"; };
+		B98A9D331AD48AE8006B43C4 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		B98A9D351AD48AED006B43C4 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		B98A9D371AD48AF7006B43C4 /* uv-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uv-logo.png"; sourceTree = "<group>"; };
 		B990381F1AC9B3A900F74BD4 /* MusicInGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MusicInGame.mp3; sourceTree = "<group>"; };
 		B99038201AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundFXButtonTap.mp3; sourceTree = "<group>"; };
 		B99038211AC9B3A900F74BD4 /* SoundFXPuf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundFXPuf.mp3; sourceTree = "<group>"; };
@@ -752,18 +750,6 @@
 			path = "Resources/Musics and SoundsFX";
 			sourceTree = "<group>";
 		};
-		1255544A19C0D90600EC663C /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				1255544B19C0D90600EC663C /* Default-568h@2x.png */,
-				1255544C19C0D90600EC663C /* Default-Landscape~ipad.png */,
-				1255544D19C0D90600EC663C /* Default.png */,
-				1255544E19C0D90600EC663C /* Default@2x.png */,
-			);
-			name = Splash;
-			path = Resources/Splash;
-			sourceTree = "<group>";
-		};
 		1293CCA319C08A25006A0E25 = {
 			isa = PBXGroup;
 			children = (
@@ -796,10 +782,9 @@
 		1293CCB219C08A25006A0E25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B985723F1AD49D3500DAD993 /* Images.xcassets */,
 				B977C3C61AC9F233006E903D /* Imagens */,
-				1255544819C0D85B00EC663C /* Images.xcassets */,
 				1226620E19F00CD6001FE3B9 /* DefaultParticleFire */,
-				1255544A19C0D90600EC663C /* Splash */,
 				1255544119C0D72000EC663C /* Musics and SoundsFX */,
 				1293CCD619C08A25006A0E25 /* Info.plist */,
 			);
@@ -1551,6 +1536,10 @@
 		B977C3C61AC9F233006E903D /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				B98A9D351AD48AED006B43C4 /* back.png */,
+				B98A9D331AD48AE8006B43C4 /* start.png */,
+				B98A9D371AD48AF7006B43C4 /* uv-logo.png */,
+				B98A9D311AD48AE0006B43C4 /* uv-background.png */,
 				B977C3E01AC9F262006E903D /* Normal */,
 				B977C3C71AC9F23C006E903D /* HD */,
 			);
@@ -1606,7 +1595,6 @@
 				FBE33B5E1AD474EE002B86AD /* PirataPerneta.swift */,
 				FBE33B5C1AD474DF002B86AD /* PirataPeixe.swift */,
 				FBE33B641AD474FF002B86AD /* Faixa.swift */,
-				B977C3FB1ACAF076006E903D /* PlayerShot.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -1694,14 +1682,14 @@
 				FBE33B731AD48175002B86AD /* ShipBlow.plist in Resources */,
 				B977C3DC1AC9F258006E903D /* PirataPerneta-ipadhd.png in Resources */,
 				B977C3D41AC9F258006E903D /* bgCenario-ipadhd.png in Resources */,
+				B98572401AD49D3500DAD993 /* Images.xcassets in Resources */,
 				B977C3EF1AC9F287006E903D /* energiaVerde-ipad.png in Resources */,
 				FBE33B6B1AD47CFF002B86AD /* PirataPeixe-ipad.plist in Resources */,
+				B98A9D321AD48AE0006B43C4 /* uv-background.png in Resources */,
 				FBE33B671AD47CC4002B86AD /* PirataPeixe-ipadhd.plist in Resources */,
 				1226621019F00CD6001FE3B9 /* fire.png in Resources */,
-				1255545119C0D90600EC663C /* Default.png in Resources */,
 				B99038231AC9B3A900F74BD4 /* SoundFXButtonTap.mp3 in Resources */,
-				1255545219C0D90600EC663C /* Default@2x.png in Resources */,
-				1255544919C0D85B00EC663C /* Images.xcassets in Resources */,
+				B98A9D381AD48AF7006B43C4 /* uv-logo.png in Resources */,
 				B977C3DD1AC9F258006E903D /* player-ipadhd.png in Resources */,
 				B977C3ED1AC9F287006E903D /* bgCenario-ipad.png in Resources */,
 				B977C3DE1AC9F258006E903D /* powerUP-ipadhd.png in Resources */,
@@ -1711,16 +1699,16 @@
 				B977C3D81AC9F258006E903D /* fire-ipadhd.png in Resources */,
 				B977C3F01AC9F287006E903D /* energiaVermelha-ipad.png in Resources */,
 				B977C3EE1AC9F287006E903D /* energiaAmarela-ipad.png in Resources */,
+				B98A9D341AD48AE8006B43C4 /* start.png in Resources */,
 				B977C3D61AC9F258006E903D /* energiaVerde-ipadhd.png in Resources */,
-				1255544F19C0D90600EC663C /* Default-568h@2x.png in Resources */,
 				B977C3F81AC9F287006E903D /* tiro-ipad.png in Resources */,
-				1255545019C0D90600EC663C /* Default-Landscape~ipad.png in Resources */,
 				B977C3DA1AC9F258006E903D /* PirataPeixe-ipadhd.png in Resources */,
 				B977C3DF1AC9F258006E903D /* tiro-ipadhd.png in Resources */,
 				B99038241AC9B3A900F74BD4 /* SoundFXPuf.mp3 in Resources */,
 				FBE33B751AD4817C002B86AD /* ShipBlow.png in Resources */,
 				B977C3F11AC9F287006E903D /* fire-ipad.png in Resources */,
 				B977C3D51AC9F258006E903D /* energiaAmarela-ipadhd.png in Resources */,
+				B98A9D361AD48AED006B43C4 /* back.png in Resources */,
 				B977C3F51AC9F287006E903D /* PirataPerneta-ipad.png in Resources */,
 				B99038221AC9B3A900F74BD4 /* MusicInGame.mp3 in Resources */,
 				FBE33B6D1AD47D06002B86AD /* PirataPerneta-ipad.plist in Resources */,
@@ -1757,7 +1745,6 @@
 				1293CE2619C08A26006A0E25 /* OALAudioTracks.m in Sources */,
 				FBE33B631AD474F8002B86AD /* Machado.swift in Sources */,
 				1293CE8A19C08A26006A0E25 /* CCBAnimationManager.m in Sources */,
-				B977C3FC1ACAF076006E903D /* PlayerShot.swift in Sources */,
 				1293CDF819C08A26006A0E25 /* CCVertex.m in Sources */,
 				1293CD2C19C08A25006A0E25 /* CCAnimationCache.m in Sources */,
 				1293CDE619C08A26006A0E25 /* base64.c in Sources */,
@@ -2010,6 +1997,7 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = UltimateViking/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = UltimateViking;
@@ -2038,6 +2026,7 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = UltimateViking/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = UltimateViking;

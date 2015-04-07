@@ -25,6 +25,7 @@ class PirataPeixe : CCSprite {
         self.spritePirataPeixe = self.gerarAnimacaoSpriteWithName("PirataPeixe", aQtdFrames: 18)
         self.spritePirataPeixe!.anchorPoint = CGPointMake(0.0, 0.0);
         self.spritePirataPeixe!.position = CGPointMake(0.0, 0.0);
+        self.spritePirataPeixe!.scale = 0.8;
         self.addChild(self.spritePirataPeixe, z:2)
         
         // Configuracoes default

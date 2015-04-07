@@ -26,6 +26,7 @@ class PirataPerneta : CCSprite {
         self.spritePirataPerneta = self.gerarAnimacaoSpriteWithName("PirataPerneta", aQtdFrames: 18)
         self.spritePirataPerneta!.anchorPoint = CGPointMake(0.0, 0.0);
         self.spritePirataPerneta!.position = CGPointMake(0.0, 0.0);
+        self.spritePirataPerneta!.scale = 0.8
         self.addChild(self.spritePirataPerneta, z:2)
 
         // Configuracoes default

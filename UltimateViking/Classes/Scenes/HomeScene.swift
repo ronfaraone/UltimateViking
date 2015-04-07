@@ -21,34 +21,33 @@ class HomeScene : CCScene {
 		super.init()
 
         // Adiciona o background
-        let background:CCSprite = CCSprite(imageNamed: "bgCenario-iphone.png")
+        let background:CCSprite = CCSprite(imageNamed: "uv-background.png")
         background.position = CGPointMake(screenSize.width/2, screenSize.height/2)
         background.anchorPoint = CGPointMake(0.5, 0.5)
         self.addChild(background)
         
-        CCSpriteFrameCache.sharedSpriteFrameCache().addSpriteFramesWithFile("PirataPerneta-ipad.plist", textureFilename:"PirataPerneta-ipad.png")
-        let ccFrameName:CCSpriteFrame = CCSpriteFrame.frameWithImageNamed("PirataPerneta1.png") as CCSpriteFrame
-        let sprite:CCSprite = CCSprite.spriteWithSpriteFrame(ccFrameName) as CCSprite
-        sprite.position = CGPointMake(self.screenSize.width/2, self.screenSize.height/2)
-        sprite.anchorPoint = CGPointMake(0.5, 0.5)
-        self.addChild(sprite)
+//        CCSpriteFrameCache.sharedSpriteFrameCache().addSpriteFramesWithFile("PirataPerneta-ipad.plist", textureFilename:"PirataPerneta-ipad.png")
+//        let ccFrameName:CCSpriteFrame = CCSpriteFrame.frameWithImageNamed("PirataPerneta1.png") as CCSpriteFrame
+//        let sprite:CCSprite = CCSprite.spriteWithSpriteFrame(ccFrameName) as CCSprite
+//        sprite.position = CGPointMake(self.screenSize.width - 80, self.screenSize.height/2)
+//        sprite.anchorPoint = CGPointMake(0.5, 0.5)
+//        self.addChild(sprite)
 
         // Titulo
-        let label:CCLabelTTF = CCLabelTTF(string: "THE ULTIMATE VIKING", fontName: "Chalkduster-Bold", fontSize: 27.0)
-        label.color = CCColor.blackColor()
-        label.position = CGPointMake(self.screenSize.width/2, self.screenSize.height/2 + 40)
-        label.anchorPoint = CGPointMake(0.5, 0.5)
+        let label:CCSprite = CCSprite(imageNamed: "uv-logo.png")
+        label.position = CGPointMake(self.screenSize.width/9.0 * 3.5  , self.screenSize.height)
+        label.anchorPoint = CGPointMake(1.0, 1.0)
         self.addChild(label)
 
 		// ToGame Button
-		let toGameButton:CCButton = CCButton(title: "[ Start ]", fontName: "Verdana-Bold", fontSize: 20.0)
-		toGameButton.position = CGPointMake(self.screenSize.width/2.0, self.screenSize.height/2.0)
+		let toGameButton:CCButton = CCButton(title: "", spriteFrame: CCSpriteFrame.frameWithImageNamed("start.png") as CCSpriteFrame)
+		toGameButton.position = CGPointMake(self.screenSize.width/2.0, self.screenSize.height/2 - 20)
 		toGameButton.anchorPoint = CGPointMake(0.5, 0.5)
 //		toGameButton.setTarget(self, selector:"startTap:")
 		toGameButton.block = {_ in StateMachine.sharedInstance.changeScene(StateMachineScenes.GameScene, isFade:true)}
 		self.addChild(toGameButton)
         
-        bestScore.color = CCColor.blackColor()
+        bestScore.color = CCColor.whiteColor()
         bestScore.position = CGPointMake(self.screenSize.width/2.0, 30)
         bestScore.anchorPoint = CGPointMake(0.5, 0)
         self.addChild(bestScore)
